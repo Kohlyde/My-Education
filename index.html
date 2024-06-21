@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample website with Bootstrap 4">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="web design, bootstrap 4, sample website, social media, HTML, CSS, JavaScript">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sample Website">
+  <meta property="og:description" content="A sample website with Bootstrap 4">
+  <meta property="og:url" content="http://example.com">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Sample Website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sample Website">
+  <meta name="twitter:description" content="A sample website with Bootstrap 4">
+  <meta name="twitter:url" content="http://example.com">
+  <meta name="twitter:image" content="http://example.com/image.jpg">
+  <meta name="twitter:site" content="@yoursite">
+  <meta name="twitter:creator" content="@yourname">
+
+  <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Sample Website">
+  <meta itemprop="description" content="A sample website with Bootstrap 4">
+  <meta itemprop="image" content="http://example.com/image.jpg">
+
+  <!-- LinkedIn -->
+  <meta property="og:title" content="Sample Website">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:description" content="A sample website with Bootstrap 4">
+  <meta property="og:url" content="http://example.com">
+
+  <!-- Pinterest -->
+  <meta name="pinterest-rich-pin" content="true">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sample Website">
+  <meta property="og:description" content="A sample website with Bootstrap 4">
+  <meta property="og:url" content="http://example.com">
+  <meta property="og:image" content="http://example.com/image.jpg">
+
+  <!-- Instagram -->
+  <meta property="og:title" content="Sample Website">
+  <meta property="og:image" content="http://example.com/image.jpg">
+  <meta property="og:description" content="A sample website with Bootstrap 4">
+  <meta property="og:url" content="http://example.com">
+
+  <!-- Other Meta Tags -->
+  <meta name="application-name" content="Sample Website">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="http://example.com/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sample Website">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://example.com/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://example.com/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://example.com/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://example.com/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://example.com/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://example.com/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://example.com/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://example.com/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://example.com/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="http://example.com/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://example.com/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://example.com/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://example.com/favicon-16x16.png">
+  <link rel="manifest" href="http://example.com/manifest.json">
+
+  <title>My Education</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <title>Audio Frequency Analyzer</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #24292E;
+      overflow: visable;
+    }
+    .navbar-main {
+      background-color: #1D2125;
+    }
+    .navbar-main .nav-link {
+      color: #24292E;
+    }
+    .navbar-main .nav-link:hover {
+      color: #ffffff;
+    }
+    .navbar-main .active {
+      background-color: #24292E;
+    }
+    .navbar-toggler {
+      border-color: rgba(0, 0, 0, 0);
+    }
+    .scrolling-nav {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 250px;
+      height: calc(100vh - 80px);
+      overflow-y: hidden;
+      transition: overflow-y 0.3s ease-in-out;
+    }
+    .scrolling-nav:hover {
+      overflow-y: auto;
+    }
+    .scrolling-nav::-webkit-scrollbar {
+      width: 5px;
+    }
+    .scrolling-nav::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+    .scrolling-nav::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    .scrolling-nav .nav-link {
+      font-size: 12px; /* Smaller font size */
+      color: #ffffff; /* White color */
+      text-overflow: ellipsis; /* Truncation */
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .scrolling-nav .nav-link:hover {
+      color: #007bff; /* Blue on hover */
+    }
+    </style>
+<body>
+    <!-- No JS Message
+    <div id="no-js-message" class="no-js-message">
+      Please enable JavaScript and disable your ad blocker to use this site.
+    </div> -->
+  
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-main">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#music">Music</a>
+          <a class="nav-link" href="#sample-packs">Sample Packs</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="tel:+123456789"><i class="fas fa-phone"></i></a>
+          <a class="nav-link" href="mailto:example@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a class="nav-link" href="mailto:example@outlook.com"><i class="fas fa-envelope"></i></a>
+          <a class="nav-link" href="https://github.com"><i class="fab fa-github"></i></a>
+          <a class="nav-link" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a class="nav-link" href="https://edmc.com"><i class="fas fa-record-vinyl"></i></a>
+          <a class="nav-link" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a class="nav-link" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a class="nav-link" href="https://codepen.io"><i class="fab fa-codepen"></i></a>
+          <a class="nav-link" href="https://stackexchange.com"><i class="fab fa-stack-exchange"></i></a>
+          <a class="nav-link" href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+          <a class="nav-link" href="https://google.com"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </nav>
+   
+
+    <div class="container" style="color:white">
+
+
+        <div class="header">
+            <h1>My Transformative Journey at SUNY Oswego Under Professors Douglas Lea and Isabelle Bichindaritz</h1>
+        </div>
+
+
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1853755653%3Fsecret_token%3Ds-cX5ahBtRQCF&color=%23744048&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-999486594" title="Køhlyde" target="_blank" style="color: #cccccc; text-decoration: none;">Køhlyde</a> · <a href="https://soundcloud.com/user-999486594/isab-lle-anf-duug/s-cX5ahBtRQCF" title="Professors Douglas Lea and Isabelle Bichindaritz" target="_blank" style="color: #cccccc; text-decoration: none;">Professors Douglas Lea and Isabelle Bichindaritz</a></div>
+        <div class="content">
+            <div class="section">
+                <p>Studying at SUNY Oswego under the mentorship of Professors Douglas Lea and Isabelle Bichindaritz has been an incredibly transformative experience for me, both academically and personally. These two remarkable educators have significantly shaped my understanding of computer science and artificial intelligence (AI), providing me with the skills and insights needed to thrive in the tech industry. Here’s a detailed account of my journey, highlighting the key courses, projects, and experiences that have defined my time at SUNY Oswego.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Building a Strong Foundation in Computer Science</h2>
+                <p>When I first arrived at SUNY Oswego, I was eager to dive into the world of computer science. My initial courses with Professor Douglas Lea were Introduction to Programming and Data Structures. These classes were foundational, teaching me the basics of programming in languages such as Java, C, and Lisp. Professor Lea’s approach was rigorous and hands-on, emphasizing not just the syntax of the languages but also the underlying principles of algorithmic thinking and data organization.</p>
+                <p>In the Data Structures course, we delved into essential data structures like arrays, linked lists, stacks, queues, trees, and graphs. One of the most impactful projects was implementing a binary search tree from scratch. This project helped me understand the intricacies of recursion and memory management, setting the stage for more complex topics later on.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Delving Into Advanced Concepts</h2>
+                <p>As I progressed in my studies, I took Advanced Data Structures and File Processing with Professor Lea. This course introduced me to more sophisticated data structures such as balanced trees, B-trees, and advanced graph algorithms. The assignments were challenging, requiring us to implement these structures and optimize them for performance.</p>
+                <p>One particularly memorable project involved developing a file indexing system using B-trees. This project taught me the practical applications of data structures in managing large datasets efficiently, a skill that has been immensely useful in my later work with big data and machine learning.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Mastering Algorithm Design and Analysis</h2>
+                <p>The Algorithm Design and Analysis course was one of the most challenging and rewarding experiences of my academic career. Professor Lea’s expertise in this area was evident as he guided us through the principles of algorithmic design. We covered a wide range of topics, including sorting and searching algorithms, dynamic programming, greedy algorithms, and computational complexity.</p>
+                <p>The rigorous coursework involved solving complex problems and proving the efficiency of our solutions. One particularly challenging assignment was to optimize a network flow algorithm, which required a deep understanding of graph theory and combinatorial optimization. This course not only improved my problem-solving skills but also my ability to approach problems from multiple angles, considering both theoretical and practical aspects.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Exploring the Cutting Edge of AI with Isabelle Bichindaritz</h2>
+                <p>A major highlight of my studies was the Artificial Intelligence (AI) and Cognitive Science courses with Professor Isabelle Bichindaritz. Her expertise in AI, especially in bioinformatics and medical informatics, opened my eyes to the vast possibilities of AI applications.</p>
+                <p>Under Professor Bichindaritz’s guidance, I learned about various machine learning algorithms, including supervised and unsupervised learning, neural networks, and reinforcement learning. A significant project was developing a predictive model for disease progression using neural networks. This project involved collecting and preprocessing medical data, designing the neural network architecture, and training the model. The hands-on experience was invaluable in understanding the complexities and challenges of machine learning.</p>
+                <p>Another fascinating area we explored was NLP. We worked on projects involving sentiment analysis and language translation using deep learning techniques. These projects required us to understand and implement algorithms for text preprocessing, tokenization, and embedding, as well as training and fine-tuning models like LSTM and Transformer networks.</p>
+                <p>In computer vision, we learned about image processing, object detection, and recognition. A notable project was developing a real-time object detection system using convolutional neural networks (CNNs). This project taught me about the intricacies of working with image data, including techniques for augmenting and normalizing images, and the architecture of CNNs.</p>
+                <p>We also delved into robotics and cognitive systems, where we learned about the integration of AI with physical systems. Projects included programming autonomous robots to navigate through complex environments using sensor data and reinforcement learning algorithms. This experience was particularly exciting as it combined software engineering with hardware interaction.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Concurrent Programming and Parallel Computing</h2>
+                <p>Given Professor Lea’s significant contributions to concurrent programming, particularly his work on the `java.util.concurrent` package, the courses on Concurrent Programming and Parallel Computing were particularly enlightening. We learned about the principles of concurrency, synchronization techniques, and the challenges of parallel execution.</p>
+                <p>We gained deep insights into the design and implementation of Java concurrency utilities. Learning directly from someone who played a crucial role in developing these utilities was an unparalleled experience. We worked on projects involving multi-threaded applications, implementing thread pools, atomic variables, and concurrent collections. These projects prepared me for tackling concurrency issues in real-world scenarios, such as developing high-performance servers and parallel processing systems.</p>
+                <p>In Parallel Computing, we explored algorithms designed to run on multiple processors simultaneously. We implemented parallel versions of sorting and searching algorithms and learned about the trade-offs between parallelism and performance. A particularly challenging project was optimizing a parallel matrix multiplication algorithm, which required a deep understanding of data partitioning and synchronization.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Software Engineering and Software Design</h2>
+                <p>The Software Engineering and Software Design courses were crucial in understanding the complete software development lifecycle. Professor Lea’s extensive industry experience was invaluable as he taught us about software design patterns, agile methodologies, and project management techniques.</p>
+                <p>We learned about various design patterns such as Singleton, Factory, Observer, and Strategy, and their applications in creating robust and maintainable software. Implementing these patterns in real-world projects helped me appreciate their importance in designing scalable and flexible systems.</p>
+                <p>We also gained practical experience with agile methodologies, including Scrum and Kanban. Working in teams, we simulated real-world software development environments, from initial requirements gathering to final deployment. This hands-on experience was instrumental in developing my collaborative skills and understanding the importance of effective communication and documentation in software projects.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Operating Systems and Compiler Construction</h2>
+                <p>Operating Systems and Compiler Construction were two of the most technically demanding courses I took with Professor Lea. In Operating Systems, we studied the inner workings of OS components, including process management, memory allocation, and file systems.</p>
+                <p>We wrote parts of an operating system kernel, which was an eye-opening experience. Understanding how the OS manages hardware resources and provides services to applications deepened my appreciation for system-level programming.</p>
+                <p>In Compiler Construction, we learned about the principles of translating high-level programming languages into machine code. Building a simple compiler from scratch was one of the most challenging projects, involving lexical analysis, syntax parsing, and code generation. This experience taught me about the complexities of language design and implementation.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Mentorship and Professional Development</h2>
+                <p>Beyond the technical knowledge and skills, both Professor Lea and Professor Bichindaritz have been incredible mentors. Their guidance extended beyond the classroom, as they actively supported my research endeavors and professional development. They encouraged me to present my projects at conferences, which helped me build confidence and gain valuable feedback from the academic community.</p>
+            </div>
+    
+            <div class="section">
+                <p>Studying at SUNY Oswego under the mentorship of Professors Douglas Lea and Isabelle Bichindaritz has been an incredibly transformative experience for me, both academically and personally. These two remarkable educators have significantly shaped my understanding of computer science and artificial intelligence (AI), providing me with the skills and insights needed to thrive in the tech industry. Here’s a detailed account of my journey, highlighting the key courses, projects, and experiences that have defined my time at SUNY Oswego.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Building a Strong Foundation in Computer Science</h2>
+                <p>When I first arrived at SUNY Oswego, I was eager to dive into the world of computer science. My initial courses with Professor Douglas Lea were Introduction to Programming and Data Structures. These classes were foundational, teaching me the basics of programming in languages such as Java, C, and Lisp. Professor Lea’s approach was rigorous and hands-on, emphasizing not just the syntax of the languages but also the underlying principles of algorithmic thinking and data organization.</p>
+                <p>In the Data Structures course, we delved into essential data structures like arrays, linked lists, stacks, queues, trees, and graphs. One of the most impactful projects was implementing a binary search tree from scratch. This project helped me understand the intricacies of recursion and memory management, setting the stage for more complex topics later on.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Delving Into Advanced Concepts</h2>
+                <p>As I progressed in my studies, I took Advanced Data Structures and File Processing with Professor Lea. This course introduced me to more sophisticated data structures such as balanced trees, B-trees, and advanced graph algorithms. The assignments were challenging, requiring us to implement these structures and optimize them for performance.</p>
+                <p>One particularly memorable project involved developing a file indexing system using B-trees. This project taught me the practical applications of data structures in managing large datasets efficiently, a skill that has been immensely useful in my later work with big data and machine learning.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Mastering Algorithm Design and Analysis</h2>
+                <p>The Algorithm Design and Analysis course was one of the most challenging and rewarding experiences of my academic career. Professor Lea’s expertise in this area was evident as he guided us through the principles of algorithmic design. We covered a wide range of topics, including sorting and searching algorithms, dynamic programming, greedy algorithms, and computational complexity.</p>
+                <p>The rigorous coursework involved solving complex problems and proving the efficiency of our solutions. One particularly challenging assignment was to optimize a network flow algorithm, which required a deep understanding of graph theory and combinatorial optimization. This course not only improved my problem-solving skills but also my ability to approach problems from multiple angles, considering both theoretical and practical aspects.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Exploring the Cutting Edge of AI with Isabelle Bichindaritz</h2>
+                <p>A major highlight of my studies was the Artificial Intelligence (AI) and Cognitive Science courses with Professor Isabelle Bichindaritz. Her expertise in AI, especially in bioinformatics and medical informatics, opened my eyes to the vast possibilities of AI applications.</p>
+                <p>Under Professor Bichindaritz’s guidance, I learned about various machine learning algorithms, including supervised and unsupervised learning, neural networks, and reinforcement learning. A significant project was developing a predictive model for disease progression using neural networks. This project involved collecting and preprocessing medical data, designing the neural network architecture, and training the model. The hands-on experience was invaluable in understanding the complexities and challenges of machine learning.</p>
+                <p>Another fascinating area we explored was NLP. We worked on projects involving sentiment analysis and language translation using deep learning techniques. These projects required us to understand and implement algorithms for text preprocessing, tokenization, and embedding, as well as training and fine-tuning models like LSTM and Transformer networks.</p>
+                <p>In computer vision, we learned about image processing, object detection, and recognition. A notable project was developing a real-time object detection system using convolutional neural networks (CNNs). This project taught me about the intricacies of working with image data, including techniques for augmenting and normalizing images, and the architecture of CNNs.</p>
+                <p>We also delved into robotics and cognitive systems, where we learned about the integration of AI with physical systems. Projects included programming autonomous robots to navigate through complex environments using sensor data and reinforcement learning algorithms. This experience was particularly exciting as it combined software engineering with hardware interaction.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Concurrent Programming and Parallel Computing</h2>
+                <p>Given Professor Lea’s significant contributions to concurrent programming, particularly his work on the `java.util.concurrent` package, the courses on Concurrent Programming and Parallel Computing were particularly enlightening. We learned about the principles of concurrency, synchronization techniques, and the challenges of parallel execution.</p>
+                <p>We gained deep insights into the design and implementation of Java concurrency utilities. Learning directly from someone who played a crucial role in developing these utilities was an unparalleled experience. We worked on projects involving multi-threaded applications, implementing thread pools, atomic variables, and concurrent collections. These projects prepared me for tackling concurrency issues in real-world scenarios, such as developing high-performance servers and parallel processing systems.</p>
+                <p>In Parallel Computing, we explored algorithms designed to run on multiple processors simultaneously. We implemented parallel versions of sorting and searching algorithms and learned about the trade-offs between parallelism and performance. A particularly challenging project was optimizing a parallel matrix multiplication algorithm, which required a deep understanding of data partitioning and synchronization.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Software Engineering and Software Design</h2>
+                <p>The Software Engineering and Software Design courses were crucial in understanding the complete software development lifecycle. Professor Lea’s extensive industry experience was invaluable as he taught us about software design patterns, agile methodologies, and project management techniques.</p>
+                <p>We learned about various design patterns such as Singleton, Factory, Observer, and Strategy, and their applications in creating robust and maintainable software. Implementing these patterns in real-world projects helped me appreciate their importance in designing scalable and flexible systems.</p>
+                <p>We also gained practical experience with agile methodologies, including Scrum and Kanban. Working in teams, we simulated real-world software development environments, from initial requirements gathering to final deployment. This hands-on experience was instrumental in developing my collaborative skills and understanding the importance of effective communication and documentation in software projects.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Operating Systems and Compiler Construction</h2>
+                <p>Operating Systems and Compiler Construction were two of the most technically demanding courses I took with Professor Lea. In Operating Systems, we studied the inner workings of OS components, including process management, memory allocation, and file systems.</p>
+                <p>We wrote parts of an operating system kernel, which was an eye-opening experience. Understanding how the OS manages hardware resources and provides services to applications deepened my appreciation for system-level programming.</p>
+                <p>In Compiler Construction, we learned about the principles of translating high-level programming languages into machine code. Building a simple compiler from scratch was one of the most challenging projects, involving lexical analysis, syntax parsing, and code generation. This experience taught me about the complexities of language design and implementation.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Mentorship and Professional Development</h2>
+                <p>Beyond the technical knowledge and skills, both Professor Lea and Professor Bichindaritz have been incredible mentors. Their guidance extended beyond the classroom, as they actively supported my research endeavors and professional development. They encouraged me to present my projects at conferences, which helped me build confidence and gain valuable feedback from the academic community.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Influence of Isabelle Bichindaritz</h2>
+                <div class="section">
+                  <h2 class="section-title">Mentorship and Professional Development</h2>
+                  <p>Beyond the technical knowledge and skills, both Professor Lea and Professor Bichindaritz have been incredible mentors. Their guidance extended beyond the classroom, as they actively supported my research endeavors and professional development. They encouraged me to present my projects at conferences, which helped me build confidence and gain valuable feedback from the academic community.</p>
+              </div>
+              <div class="section">
+                  <h2 class="section-title">Influence of Isabelle Bichindaritz</h2>
+                  <p>Professor Isabelle Bichindaritz’s influence on my career has been profound. Her expertise in AI, particularly in its application to healthcare, inspired me to explore the intersection of technology and medicine. Under her mentorship, I worked on several interdisciplinary projects that combined AI with bioinformatics, such as developing predictive models for disease diagnosis and treatment optimization.</p>
+                  <p>Her emphasis on ethical considerations in AI development has also been invaluable. She taught us to consider the broader impact of our work, including privacy, bias, and accessibility. This holistic approach to AI has shaped my perspective and motivated me to pursue projects that not only advance technology but also benefit society.</p>
+              </div>
+              <div class="section">
+                  <h2 class="section-title">Conclusion</h2>
+                  <p>Studying under Professors Douglas Lea and Isabelle Bichindaritz at SUNY Oswego has been a transformative experience. The rigorous coursework, hands-on projects, and expert mentorship have equipped me with a deep understanding of computer science principles and advanced AI technologies. From mastering data structures and algorithms to exploring the cutting edge of AI and concurrent programming, I have gained a comprehensive skill set that prepares me for a successful career in the tech industry.</p>
+                  <p>Professor Lea’s dedication to teaching and his contributions to the field have inspired me to pursue excellence and innovation in my future endeavors. Similarly, Professor Bichindaritz’s influence has opened my eyes to the incredible potential of AI in healthcare and beyond, motivating me to continue exploring this exciting field.</p>
+                  <p>My time at SUNY Oswego has been defined by growth, learning, and inspiration. I am profoundly grateful for the guidance and support of Professors Lea and Bichindaritz, and I look forward to applying the knowledge and skills I’ve gained to make a positive impact in the world of technology.</p>
+              </div>
+          </div>
+          <div class="footer">
+              <p>&copy; 2024 My Journey at SUNY Oswego</p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
